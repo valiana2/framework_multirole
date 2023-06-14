@@ -27,6 +27,14 @@
     <!-- Styles -->
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f3f7ff;
+        }
+        .navbar {
+            background-color: #447dd4;
+        }
+    </style>
 
 </head>
 
