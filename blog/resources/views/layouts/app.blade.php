@@ -74,7 +74,7 @@
 
                         <ul style="list-style-type: none; display: flex; justify-content: space-around;">
                             <li><a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color: #0c2168; font-size: 15px;">{{ Auth::user()->name }} <span class="caret"></span></a></li>
-                            <li><a class="nav-link" href="{{ route('users.index') }}" style="color: #0c2168; font-size: 25px;">Manage Users</a></li>
+                            <li><a class="nav-link" href="{{ route('users.index') }}" style="color: #0c2168; font-size: 25px;">Manage Customers</a></li>
                             <li><a class="nav-link" href="{{ route('roles.index') }}" style="color: #0c2168; font-size: 25px;">Manage Role</a></li>
                             <li><a class="nav-link" href="{{ route('products.index') }}" style="color: #0c2168; font-size: 25px;">Manage Account</a></li>
                             <li><a class="nav-link" href="{{ route('purchases.index') }}" style="color: #0c2168; font-size: 25px;">Manage Purchase</a></li>

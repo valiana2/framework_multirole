@@ -12,6 +12,8 @@ use App\Http\Controllers\ProductController;
 
 use App\Http\Controllers\PurchaseController;
 
+use App\Http\Controllers\ChirpController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,7 +45,6 @@ Route::group(['middleware' => ['auth']], function() {
 
 Route::resource('purchases', PurchaseController::class);
 
-//Route::get('/purchases', [App\Http\Controllers\PurchaseController::class, 'create'])->name('purchases');
-//Auth::routes();
+//Route::get('/purchases', [App\Http\Controllers\PurchaseController::class, 'create'])->name('purchases')
 
-
+//require __DIR__.'/auth.php';
