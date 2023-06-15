@@ -34,7 +34,7 @@
 @endif
 
 
-<table class="table table-bordered">
+<table class="table table-bordered" style="font-size: 20px; color: #1366bb;">
 
  <tr>
 

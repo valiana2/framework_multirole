@@ -32,7 +32,7 @@ class Purchase extends Model
 
     protected $fillable = [
 
-        'name', 'detail'
+        'name', 'detail', 'price'
 
     ];
 

@@ -41,4 +41,9 @@ Route::group(['middleware' => ['auth']], function() {
 
 });
 
-Route::get('/purchases', [App\Http\Controllers\PurchaseController::class, 'create'])->name('purchases');
+Route::resource('purchases', PurchaseController::class);
+
+//Route::get('/purchases', [App\Http\Controllers\PurchaseController::class, 'create'])->name('purchases');
+//Auth::routes();
+
+

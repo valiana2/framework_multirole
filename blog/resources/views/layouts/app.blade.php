@@ -29,10 +29,14 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <style>
         body {
-            background-color: #f3f7ff;
+            background-image: url("Images/bank.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: 50%;
         }
         .navbar {
-            background-color: #3e6fb9;
+            background-color: #b7ebf8;
         }
     </style>
 
@@ -45,8 +49,6 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
 
             <div class="container">
-
-                <h5 style="text-align: center; color: white; font-size: 40px;">Banque Française</h5>
 
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -70,19 +72,17 @@
 
                         @else
 
-                            <li><a class="nav-link" href="{{ route('users.index') }}">Manage Customer</a></li>
-
-                            <li><a class="nav-link" href="{{ route('roles.index') }}">Manage Role</a></li>
-
-                            <li><a class="nav-link" href="{{ route('products.index') }}">Manage Account</a></li>
+                        <ul style="list-style-type: none; display: flex; justify-content: space-around;">
+                            <li><a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre style="color: #0c2168; font-size: 15px;">{{ Auth::user()->name }} <span class="caret"></span></a></li>
+                            <li><a class="nav-link" href="{{ route('users.index') }}" style="color: #0c2168; font-size: 25px;">Manage Users</a></li>
+                            <li><a class="nav-link" href="{{ route('roles.index') }}" style="color: #0c2168; font-size: 25px;">Manage Role</a></li>
+                            <li><a class="nav-link" href="{{ route('products.index') }}" style="color: #0c2168; font-size: 25px;">Manage Account</a></li>
+                            <li><a class="nav-link" href="{{ route('purchases.index') }}" style="color: #0c2168; font-size: 25px;">Manage Purchase</a></li>
+                            
+                        
+                        </ul>
 
                             <li class="nav-item dropdown">
-
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-
-                                </a>
 
 
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">

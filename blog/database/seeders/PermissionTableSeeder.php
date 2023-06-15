@@ -32,7 +32,7 @@ class PermissionTableSeeder extends Seeder
 
         $permissions = [
 
-           'role-list',
+           /*'role-list',
 
            'role-create',
 
@@ -46,8 +46,16 @@ class PermissionTableSeeder extends Seeder
 
            'product-edit',
 
-           'product-delete'
+           'product-delete',*/
 
+           'purchase-list',
+
+           'purchase-create',
+
+           'purchase-edit',
+           
+           'purchase-delete',
+           
         ];
 
      

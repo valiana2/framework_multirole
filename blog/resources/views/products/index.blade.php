@@ -39,21 +39,17 @@
     @endif
 
 
-    <table class="table table-bordered">
-
+    <table class="table table-bordered" style="font-size: 20px; color: rgb(39, 83, 202);">
         <tr>
-
             <th>No</th>
-
             <th>Name</th>
-
             <th>Details</th>
-
             <th>Balance</th>
-
             <th width="280px">Action</th>
-
         </tr>
+        <!-- Ajoutez ici les autres lignes du tableau -->
+    
+    
 
 	    @foreach ($products as $product)
 
