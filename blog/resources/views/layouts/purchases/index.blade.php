@@ -9,15 +9,15 @@
 
             <div class="pull-left">
 
-                <h2>Accounts</h2>
+                <h2>Purchases</h2>
 
             </div>
 
             <div class="pull-right">
 
-                @can('product-create')
+                @can('purchase-create')
 
-                <a class="btn btn-success" href="{{ route('products.create') }}"> Create New Account</a>
+                <a class="btn btn-success" href="{{ route('purchases.create') }}"> Create New Purchase</a>
 
                 @endcan
 
@@ -49,33 +49,29 @@
 
             <th>Details</th>
 
-            <th>Balance</th>
-
             <th width="280px">Action</th>
 
         </tr>
 
-	    @foreach ($products as $product)
+	    @foreach ($purchase as $purchase)
 
 	    <tr>
 
 	        <td>{{ ++$i }}</td>
 
-	        <td>{{ $product->name }}</td>
+	        <td>{{ $purchase->name }}</td>
 
-	        <td>{{ $product->detail }}</td>
-
-            <td>{{ $product->balance }}</td>
+	        <td>{{ $purchase->detail }}</td>
 
 	        <td>
 
-                <form action="{{ route('products.destroy',$product->id) }}" method="POST">
+                <form action="{{ route('purchases.destroy',$purchase->id) }}" method="POST">
 
-                    <a class="btn btn-info" href="{{ route('products.show',$product->id) }}">Show</a>
+                    <a class="btn btn-info" href="{{ route('purchases.show',$purchase->id) }}">Show</a>
 
-                    @can('product-edit')
+                    @can('purchase-edit')
 
-                    <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
+                    <a class="btn btn-primary" href="{{ route('purchases.edit',$purchase->id) }}">Edit</a>
 
                     @endcan
 
@@ -84,7 +80,7 @@
 
                     @method('DELETE')
 
-                    @can('product-delete')
+                    @can('purchase-delete')
 
                     <button type="submit" class="btn btn-danger">Delete</button>
 
@@ -101,7 +97,7 @@
     </table>
 
 
-    {!! $products->links() !!}
+    {!! $purchases->links() !!}
 
 
 @endsection

@@ -9,13 +9,13 @@
 
             <div class="pull-left">
 
-                <h2> Show Account</h2>
+                <h2> Show Purchase</h2>
 
             </div>
 
             <div class="pull-right">
 
-                <a class="btn btn-primary" href="{{ route('products.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('purchases.index') }}"> Back</a>
 
             </div>
 
@@ -30,9 +30,9 @@
 
             <div class="form-group">
 
-                <strong>Customer Name:</strong>
+                <strong>Purchase Name:</strong>
 
-                {{ $product->name }}
+                {{ $purchase->name }}
 
             </div>
 
@@ -44,19 +44,7 @@
 
                 <strong>Details:</strong>
 
-                {{ $product->detail }}
-
-            </div>
-
-        </div>
-
-        <div class="col-xs-12 col-sm-12 col-md-12">
-
-            <div class="form-group">
-
-                <strong>Balance:</strong>
-
-                {{ $product->balance }}
+                {{ $purchase->detail }}
 
             </div>
 

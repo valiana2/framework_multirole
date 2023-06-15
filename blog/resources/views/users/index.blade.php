@@ -8,13 +8,13 @@
 
         <div class="pull-left">
 
-            <h2>Users Management</h2>
+            <h2>Customers Management</h2>
 
         </div>
 
         <div class="pull-right">
 
-            <a class="btn btn-success" href="{{ route('users.create') }}"> Create New User</a>
+            <a class="btn btn-success" href="{{ route('users.create') }}"> Create New Customer</a>
 
         </div>
 
@@ -97,7 +97,5 @@
 
 {!! $data->render() !!}
 
-
-<p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>
 
 @endsection

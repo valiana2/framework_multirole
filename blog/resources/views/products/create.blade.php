@@ -9,7 +9,7 @@
 
             <div class="pull-left">
 
-                <h2>Add New Product</h2>
+                <h2>Add New Account</h2>
 
             </div>
 
@@ -56,7 +56,7 @@
 
 		        <div class="form-group">
 
-		            <strong>Name:</strong>
+		            <strong>Customer Name:</strong>
 
 		            <input type="text" name="name" class="form-control" placeholder="Name">
 
@@ -75,6 +75,17 @@
 		        </div>
 
 		    </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+
+		        <div class="form-group">
+
+		            <strong>Balance:</strong>
+
+		            <textarea class="form-control" style="height:150px" name="balance" placeholder="Balance"></textarea>
+
+		        </div>
+
+		    </div>
 
 		    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
 
@@ -87,7 +98,5 @@
 
     </form>
 
-
-<p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>
 
 @endsection

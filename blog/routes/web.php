@@ -10,6 +10,8 @@ use App\Http\Controllers\UserController;
 
 use App\Http\Controllers\ProductController;
 
+use App\Http\Controllers\PurchaseController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,3 +40,5 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('products', ProductController::class);
 
 });
+
+Route::get('/purchases', [App\Http\Controllers\PurchaseController::class, 'create'])->name('purchases');

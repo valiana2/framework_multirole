@@ -9,7 +9,7 @@
 
         <div class="pull-left">
 
-            <h2>Create New User</h2>
+            <h2>Create New Customer</h2>
 
         </div>
 
@@ -120,7 +120,5 @@
 
 {!! Form::close() !!}
 
-
-<p class="text-center text-primary"><small>Tutorial by ItSolutionStuff.com</small></p>
 
 @endsection

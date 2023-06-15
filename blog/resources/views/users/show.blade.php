@@ -9,7 +9,7 @@
 
         <div class="pull-left">
 
-            <h2> Show User</h2>
+            <h2> Show Customer</h2>
 
         </div>
 
